@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ilife.shining.movingtrack.Fragment.LocationFragment">
+
+    <RelativeLayout
+        android:id="@+id/rl_start_location"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/grey_300"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_start_location"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="开始记录定位" />
+
+    </RelativeLayout>
+    <!-- 引入布局文件 -->
+    <com.amap.api.maps2d.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+</LinearLayout>

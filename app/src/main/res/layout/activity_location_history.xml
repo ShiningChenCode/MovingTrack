@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_no_date"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/grey_400"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tv_no_date_zhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text="至"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/tv_no_date_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_no_date_zhi"
+            android:layout_centerHorizontal="true"
+            android:text="2016-03-01 14:20:00"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/tv_no_date_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_no_date_zhi"
+            android:layout_centerHorizontal="true"
+            android:text="2016-03-01 14:20:00"
+            android:textSize="25sp" />
+
+
+        <TextView
+            android:id="@+id/tv_no_date_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_no_date_end_time"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="没有查询到数据"
+            android:textSize="25sp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- 引入布局文件 -->
+        <com.amap.api.maps2d.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="保存" />
+
+    </RelativeLayout>
+</LinearLayout>

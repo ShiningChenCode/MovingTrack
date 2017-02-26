@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/id_et_show_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false" />
+
+    <Button
+        android:id="@+id/id_btn_show_picker"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="日期对话框" />
+
+    <Button
+        android:id="@+id/id_btn_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="查询" />
+
+</LinearLayout>

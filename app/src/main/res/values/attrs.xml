@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 通用标题栏属性 -->
+    <declare-styleable name="CommonTitleBar">
+        <attr name="backgroundColor" format="color"/>
+
+        <attr name="leftBtnIcon" format="reference" />
+        <attr name="leftBtnTxt" format="string|reference" />
+        <attr name="leftBtnTxtColor" format="color" />
+        <attr name="leftBtnTxtSize" format="dimension" />
+
+
+        <attr name="titleTxt" format="string|reference" />
+        <attr name="titleTxtColor" format="color" />
+        <attr name="titleTxtstyle" >
+            <enum name="normal" value="0" />
+            <enum name="bold" value="1" />
+        </attr>
+        <attr name="titleTxtSize" format="dimension" />
+
+        <attr name="rightBtnTxt" format="string|reference" />
+        <attr name="rightBtnTxtColor" format="color" />
+        <attr name="rightBtnIcon" format="reference" />
+        <attr name="rightBtnTxtSize" format="dimension" />
+
+
+    </declare-styleable>
+
+
+
+
+</resources>
